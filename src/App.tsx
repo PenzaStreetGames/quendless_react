@@ -1,21 +1,19 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
+import { BrowserRouter as Router} from 'react-router-dom';
+import {PageTemplate} from "./components/layout/PageTemplate";
+import {PageHeader, headerNavLinks} from "./components/layout/PageHeader";
+import {PageFooter} from "./components/layout/PageFooter";
+import {SiteRoutes} from "./routes/SiteRoutes";
 import './App.css';
-import MainPage from "./main_page";
-import {styles} from "./styles"
 
-
-function App() {
+export function App() {
   return (
-      <div style={styles.MainPageBackground}>
-        <div className="container min-vh-100 d-flex flex-column justify-content-center align-content-center">
-          <MainPage>
-          </MainPage>
-        </div>
-      </div>
+      <PageTemplate>
+          <Router>
+              <PageHeader items={headerNavLinks}/>
+              <SiteRoutes/>
+              <PageFooter/>
+          </Router>
+      </PageTemplate>
   );
 }
-
-export default App;
