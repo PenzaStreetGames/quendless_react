@@ -1,5 +1,5 @@
 import {NavLink} from "react-router-dom";
-import {HorizontalBar} from "../HorizontalBar";
+import {HorizontalBar} from "../primitives/HorizontalBar";
 
 type NavigationLink = {
     path: string,

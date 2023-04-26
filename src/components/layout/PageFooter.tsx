@@ -1,4 +1,4 @@
-import {HorizontalBar} from "../HorizontalBar";
+import {HorizontalBar} from "../primitives/HorizontalBar";
 
 export const PageFooter = () => {
     return (

@@ -6,11 +6,13 @@ import {GroupPage} from "../components/pages/GroupPage";
 import {QueuesPage} from "../components/pages/QueuesPage";
 import {QueuePage} from "../components/pages/QueuePage";
 import React from "react";
+import {AuthPage} from "../components/pages/AuthPage";
 
 export const SiteRoutes = () => {
     return (
         <Routes>
             <Route path="/" Component={MainPage}/>
+            <Route path="/auth" Component={AuthPage}/>
             <Route path="/profile" Component={ProfilePage}/>
             <Route path="/groups" Component={GroupsPage}/>
             <Route path="/group" Component={GroupPage}/>
