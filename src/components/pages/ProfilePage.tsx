@@ -1,10 +1,11 @@
 import {Panel} from "../primitives/Panel";
 import {ProfileCard} from "../cards/ProfileCard";
 import defaultIcon from "../../res/images/user_icon.png"
+import {ContentWrapper} from "../primitives/ContentWrapper";
 
 export function ProfilePage() {
     return (
-        <div className="d-flex flex-column justify-content-start" style={{minHeight: "80vh"}}>
+        <ContentWrapper>
             <Panel>
                 <ProfileCard profile={{
                     name: "Pavel Solomatin",
@@ -17,7 +18,6 @@ export function ProfilePage() {
                 <h2>Recent Activity</h2>
                 <p>There's no recent activity</p>
             </Panel>
-        </div>
-
+        </ContentWrapper>
     );
 }
