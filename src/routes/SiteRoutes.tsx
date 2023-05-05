@@ -11,13 +11,13 @@ import {AuthPage} from "../components/pages/AuthPage";
 export const SiteRoutes = () => {
     return (
         <Routes>
-            <Route path="/" Component={MainPage}/>
-            <Route path="/auth" Component={AuthPage}/>
-            <Route path="/profile" Component={ProfilePage}/>
-            <Route path="/groups" Component={GroupsPage}/>
-            <Route path="/group" Component={GroupPage}/>
-            <Route path="/queues" Component={QueuesPage}/>
-            <Route path="/queue" Component={QueuePage}/>
+            <Route path="/" element={<MainPage/>}/>
+            <Route path="/auth" element={<AuthPage/>}/>
+            <Route path="/profile" element={<ProfilePage/>}/>
+            <Route path="/groups" element={<GroupsPage/>}/>
+            <Route path="/group" element={<GroupPage/>}/>
+            <Route path="/queues" element={<QueuesPage/>}/>
+            <Route path="/queue" element={<QueuePage/>}/>
         </Routes>
     );
 };
