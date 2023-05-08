@@ -1,7 +1,14 @@
+import {Panel} from "../primitives/Panel";
+
 export function UserAgreementPage() {
     return (
-        <div>
-            <p>This is page with User's Agreement</p>
-        </div>
+        <Panel>
+            <h2>Пользовательское соглашение</h2>
+            <p>
+                Пользователь обязуется использовать приложение только во имя добра, а во имя зла его не использовать
+                <br/>
+                За нарушение правил со стороны Администраторов предусмотрен вечный БАН
+            </p>
+        </Panel>
     )
 }
